@@ -2,19 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css"/>
   <title>Salary Calculator</title>
 </head>
 <body>
   <header>
-    <h1>Salary Calculator</h1>
+    <h1 id="header">Salary Calculator</h1>
   </header>
-  <main>
-    <h2>Add Employee</h2>
-    <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
+    <div id="container">
+      <main>
+        <h2>Add Employee</h2>
+          <form id="addEmployeeForm">
+              <input type="text" placeholder="First Name" id="firstNameInput" data-testid="firstNameInput"></input>
+              <input type="text" placeholder="Last Name" id="lastNameInput" data-testid="lastNameInput"></input>
+              <input type="number" placeholder="ID Number" id="idInput" data-testid="idInput"></input>
+              <input type="text" placeholder="Job Title" id="titleInput" data-testid="titleInput"></input>
+              <input type="number" placeholder="Annual Salary" id="annualSalaryInput" data-testid="annualSalaryInput"></input>
+              <button type="button" onSubmit="submitForm(event)" data-testid="submitButton">Submit</button> 
+          </form>
+          <h2>Employees</h2>
+          <table id="EmployeeTable">
+            <thead id="employeeHeader">
+              <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>ID Number</th>
+                  <th>Job Title</th>
+                  <th>Annual Salary</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody id="employeeList">
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><button onclick="deleteRow(event)">Delete</button></td>
+              </tr>
+          </table>
+      </main>
+      <footer id="footer">
+        <p>Total Monthly</p>
+      </footer>
+    </div>
+  <script src="client.js"></script>
 </body>
 </html>
