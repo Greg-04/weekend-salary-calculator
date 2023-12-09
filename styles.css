@@ -1,4 +1,4 @@
-#EmployeeTable {
+#employeeTable {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -15,8 +15,9 @@
     margin: 20px auto;
   } 
 
-#employeeHeader,
-#employeeList {
+#employeeTable th,
+#employeeTable td {
     border: 1px solid #ddd;
     padding: 8px;
+    text-align: left;
 }
