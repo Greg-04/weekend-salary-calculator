@@ -28,5 +28,12 @@
 }
 
 .over-budget {
-    color: red;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    color: white;
+}
+
+#buttonSubmit {
+    margin-top: 5px;
 }

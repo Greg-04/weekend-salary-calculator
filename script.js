@@ -53,7 +53,7 @@ function updateTotal() {
     let footer = document.querySelector('#footer');
     if (monthlyTotal > 20000) {
         footer.className = 'over-budget';
-        console.log("We're over budget!")
+        console.log("We're over budget :(")
     } else {
         console.log(`We're good!`);
     }
