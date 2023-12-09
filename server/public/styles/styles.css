@@ -42,3 +42,7 @@
 #totalMonthly {
     display: inline;
 }
+
+#employeeHeader {
+    background-color: darkgray;
+}

@@ -60,8 +60,3 @@ function updateTotal() {
     }
 
 }
-
- module.exports = {
-    submitForm: submitForm,
-
- }
