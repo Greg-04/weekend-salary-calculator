@@ -44,9 +44,18 @@ function deleteRow(event) {
     event.target.parentNode.parentNode.remove();
 }
 
-//function to update total
+//function to update total in footer
 function updateTotal() {
     let totalElement = document.querySelector('#totalMontly');
-    totalElement.innerHTML = monthlyTotal;
+    totalElement.innerHTML = `$${monthlyTotal}`;
+
+    //conditional to add class if monthly total exceeds 20,000
+    let footer = document.querySelector('#footer');
+    if (monthlyTotal > 20000) {
+        footer.className = 'over-budget';
+        console.log("We're over budget!")
+    } else {
+        console.log(`We're good!`);
+    }
 
 }

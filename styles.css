@@ -26,3 +26,7 @@
     margin-top: 100px;
     text-align: end;
 }
+
+.over-budget {
+    color: red;
+}
